@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+    background: url('https://source.unsplash.com/1600x900/?landscape');
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+}
+
+.container .password-container{
+    background-color: beige;
+    /* width: 300px;
+    height: 100px; */
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 6px 8px black;
+    margin: 10px;
+}
+.container .password-container h2{
+    font-size: 44px;
+}
+.container .password-container .input-container{
+    border: solid 3px black;
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .password-container .input-container input{
+    border: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: transparent;
+    outline: none;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+
+.input::placeholder{
+    letter-spacing: normal;
+}
+
+.container .password-container .input-container i{
+    cursor: pointer;
+    opacity: .3;
+}
+.container .password-container .input-container i:hover{
+    opacity: .8;
+}
+
+.btn{
+    background-color: black;
+    color: beige;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 22px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(48, 170, 79);
+    color: black;
+    letter-spacing: 1.8px;
+}
+
+.btn:active{
+    transform: scale(.95);
+}
+
+.alert-container{
+    position: fixed;
+    width: 300px;
+    height: 50px;
+    background-color: rgb(85, 226, 85);
+    right: 20px;
+    bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 8px black ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.active.alert-container{
+    display: none;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
